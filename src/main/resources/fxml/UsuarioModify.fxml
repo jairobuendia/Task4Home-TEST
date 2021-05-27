@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="814.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdtaskapp.edu.fpdual.controler.UsuarioModifyController">
+   <children>
+      <TextField fx:id="nuevoCorreo" layoutX="117.0" layoutY="272.0" prefHeight="39.0" prefWidth="565.0" promptText="Nuevo Correo" />
+      <TextField fx:id="nuevoEdad" layoutX="117.0" layoutY="214.0" prefHeight="39.0" prefWidth="565.0" promptText="Nueva Edad" />
+      <TextField fx:id="nickBorrar" alignment="CENTER" layoutX="259.0" layoutY="472.0" prefHeight="39.0" prefWidth="252.0" promptText="Nombre" />
+      <Button fx:id="borrar" layoutX="360.0" layoutY="533.0" mnemonicParsing="false" onAction="#handleBorrar" text="Borrar" textFill="RED" />
+      <TextField fx:id="nuevoNick" layoutX="117.0" layoutY="159.0" prefHeight="39.0" prefWidth="565.0" promptText="Nuevo Nick" />
+      <Button fx:id="aplicar" layoutX="287.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleAplicar" prefHeight="25.0" prefWidth="195.0" text="Aplicar" />
+      <Button fx:id="Exit" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="39.0" prefWidth="48.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/flecha.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="99.0" fitWidth="121.0" layoutX="693.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="174.0" layoutY="25.0" text="MODIFICAR USUARIO">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="183.0" layoutY="394.0" text="ELIMINAR USUARIO">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codigoID" alignment="CENTER" layoutX="268.0" layoutY="100.0" prefHeight="39.0" prefWidth="252.0" promptText="Codigo Usuario Modificar" />
+   </children>
+</AnchorPane>

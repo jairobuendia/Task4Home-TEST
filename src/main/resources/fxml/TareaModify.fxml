@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="814.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdtaskapp.edu.fpdual.controler.TareaModifyController">
+   <children>
+      <TextField fx:id="nuevoPuntos" layoutX="84.0" layoutY="300.0" prefHeight="39.0" prefWidth="224.0" promptText="Nuevos Puntos" />
+      <TextField fx:id="nombreBorrar" alignment="CENTER" layoutX="421.0" layoutY="136.0" prefHeight="39.0" prefWidth="252.0" promptText="Nombre" />
+      <Button fx:id="borrar" layoutX="523.0" layoutY="198.0" mnemonicParsing="false" onAction="#handleBorrar" text="Borrar" textFill="RED" />
+      <TextField fx:id="nuevoNombre" layoutX="83.0" layoutY="191.0" prefHeight="39.0" prefWidth="224.0" promptText="Nuevo Nombre" />
+      <Button fx:id="aplicar" layoutX="128.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleAplicar" prefHeight="25.0" prefWidth="135.0" text="Aplicar" />
+      <Button fx:id="Exit" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="39.0" prefWidth="48.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/flecha.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="99.0" fitWidth="121.0" layoutX="693.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="62.0" layoutY="75.0" text="MODIFICAR TAREA">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="75.0" text="ELIMINAR TAREA">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codigoID" alignment="CENTER" layoutX="112.0" layoutY="136.0" prefHeight="39.0" prefWidth="165.0" promptText="Codigo Tarea Modificar" />
+      <Label layoutX="419.0" layoutY="266.0" text="CREAR TAREA">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="crearNombre" layoutX="439.0" layoutY="338.0" prefHeight="39.0" prefWidth="224.0" promptText="Nombre" />
+      <TextField fx:id="crearPuntos" layoutX="438.0" layoutY="459.0" prefHeight="39.0" prefWidth="224.0" promptText="Puntos" />
+      <Button fx:id="crear" layoutX="482.0" layoutY="528.0" mnemonicParsing="false" onAction="#handleCrear" prefHeight="25.0" prefWidth="135.0" text="Crear" textFill="#4e8a49">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="165.0" fitWidth="196.0" layoutX="49.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/stick.gif" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="nuevoFecha" layoutX="83.0" layoutY="243.0" prefHeight="39.0" prefWidth="224.0" promptText="Nueva Fecha Realizar" />
+      <DatePicker fx:id="crearFecha" layoutX="439.0" layoutY="397.0" prefHeight="39.0" prefWidth="224.0" promptText="Fecha Realizar" />
+   </children>
+</AnchorPane>

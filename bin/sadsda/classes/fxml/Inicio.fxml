@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="501.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdtaskapp.edu.fpdual.controler.InicioController">
+	<children>
+      <Button fx:id="exit" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleButtonExit" text="Salir" textFill="#ff4444">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="tareas" contentDisplay="BOTTOM" layoutX="180.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleButtonTareas" prefHeight="158.0" prefWidth="142.0" text="Tareas" textAlignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="113.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/tareas.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="146.0" fitWidth="445.0" layoutX="53.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo-negro.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="usuarios" contentDisplay="BOTTOM" layoutX="26.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleButtonUsuarios" prefHeight="158.0" prefWidth="142.0" text="Usuarios" textAlignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="users" fitHeight="113.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/users.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="premios" contentDisplay="BOTTOM" layoutX="337.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleButtonPremios" prefHeight="158.0" prefWidth="142.0" text="Premios" textAlignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="113.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/copa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+	</children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="508.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdtaskapp.edu.fpdual.controler.LoginController">
+	<children>
+		<ImageView fitHeight="184.0" fitWidth="470.0" layoutX="21.0" layoutY="38.0">
+			<image>
+				<Image url="@../images/logo-negro.png" />
+			</image>
+		</ImageView>
+		<TextField fx:id="username" layoutX="47.0" layoutY="257.0" prefHeight="46.0" prefWidth="366.0" promptText="Usuario" />
+		<PasswordField fx:id="password" layoutX="47.0" layoutY="345.0" prefHeight="46.0" prefWidth="366.0" promptText="Contraseña" />
+      <HBox layoutX="47.0" layoutY="397.0" prefHeight="39.0" prefWidth="165.0" />
+		<Button fx:id="buttonLogin" layoutX="47.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="39.0" prefWidth="78.0" text="Entrar" />
+		<Button fx:id="buttonRegister" layoutX="366.0" layoutY="537.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="39.0" prefWidth="95.0" text="Registrarse" />
+	</children>
+</AnchorPane>
